@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>ClientPipe</name>
+	<creationDate>September 2012</creationDate>
+	<author>Samuel Lawson</author>
+	<authorEmail>sjlawson@sdf.org</authorEmail>
+	<authorUrl>http://sjlawosn.sdf.org</authorUrl>
+	<copyright>Samuel Lawson</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Client Pipe Automated Scheduling Component</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>images/cal_bg.png</filename>
+		<filename>images/cal_next.png</filename>
+		<filename>images/cal_prev.png</filename>
+		<filename>controller.php</filename>
+		<filename>usermenu.inc.php</filename>
+		<filename>clientpipe.php</filename>
+		<filename>hintbox.js</filename>
+		<filename>cleanValidator.js</filename>
+		<filename>clientpipe.css</filename>
+		<filename>index.html</filename>
+		<filename>models/clientpipe.php</filename>
+		<filename>models/uagenda.php</filename>
+		<filename>models/appform.php</filename>
+		
+		<filename>views/clientpipe/index.html</filename>
+		<filename>views/clientpipe/view.html.php</filename>
+		<filename>views/clientpipe/tmpl/index.html</filename>
+		<filename>views/clientpipe/tmpl/default.php</filename>
+		
+		<filename>views/appform/index.html</filename>
+		<filename>views/appform/view.html.php</filename>
+		<filename>views/appform/tmpl/index.html</filename>
+		<filename>views/appform/tmpl/default.php</filename>
+		
+		<filename>views/uagenda/index.html</filename>
+		<filename>views/uagenda/view.html.php</filename>
+		<filename>views/uagenda/tmpl/index.html</filename>
+		<filename>views/uagenda/tmpl/default.php</filename>
+		
+		<filename>views/index.html</filename>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>	
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>ClientPipe</menu>
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Site Main File Copy Section -->
+			<filename>clientpipe.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>controller.php</filename>
+			<filename>BlueBtn-alpha.png</filename>
+			
+			<filename>controllers/clientpipe.php</filename>
+			<filename>controllers/slot.php</filename>
+			<filename>controllers/settings.php</filename>
+			<filename>controllers/staff.php</filename>
+			<filename>controllers/appointment.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/exception.php</filename>
+			
+			<filename>models/clientpipes.php</filename>
+			<filename>models/clientpipe.php</filename>
+			<filename>models/appointment.php</filename>
+			<filename>models/slot.php</filename>
+			<filename>models/staff.php</filename>
+			<filename>models/settings.php</filename>
+			<filename>models/exception.php</filename>
+			<filename>models/index.html</filename>
+			
+			<filename>tables/appointment.php</filename>
+			<filename>tables/event.php</filename>
+			<filename>tables/exception.php</filename>
+			<filename>tables/clientpipe.php</filename>
+			<filename>tables/settings.php</filename>
+			<filename>tables/slot_alloc.php</filename>
+			<filename>tables/slot.php</filename>
+			<filename>tables/staff.php</filename>
+			<filename>tables/index.html</filename>
+			
+			<filename>views/settings/index.html</filename>	
+			<filename>views/settings/view.html.php</filename>
+			<filename>views/settings/tmpl/default.php</filename>
+			<filename>views/settings/tmpl/form.php</filename>
+			<filename>views/settings/tmpl/index.html</filename>
+				
+			<filename>views/staff/index.html</filename>	
+			<filename>views/staff/view.html.php</filename>
+			<filename>views/staff/tmpl/default.php</filename>
+			<filename>views/staff/tmpl/form.php</filename>
+			<filename>views/staff/tmpl/index.html</filename>
+			
+			<filename>views/slot/index.html</filename>	
+			<filename>views/slot/view.html.php</filename>
+			<filename>views/slot/tmpl/default.php</filename>
+			<filename>views/slot/tmpl/form.php</filename>
+			<filename>views/slot/tmpl/index.html</filename>
+			
+			<filename>views/exception/index.html</filename>	
+			<filename>views/exception/view.html.php</filename>
+			<filename>views/exception/tmpl/default.php</filename>
+			<filename>views/exception/tmpl/form.php</filename>
+			<filename>views/exception/tmpl/index.html</filename>
+			
+			<filename>views/appointment/index.html</filename>	
+			<filename>views/appointment/view.html.php</filename>
+			<filename>views/appointment/tmpl/default.php</filename>
+			<filename>views/appointment/tmpl/form.php</filename>
+			<filename>views/appointment/tmpl/index.html</filename>
+			
+			<filename>views/clientpipe/view.html.php</filename>
+			<filename>views/clientpipe/tmpl/form.php</filename>
+			<filename>views/clientpipe/tmpl/default.php</filename>
+			<filename>views/clientpipe/index.html</filename>
+			<filename>views/clientpipe/tmpl/index.html</filename>
+			<filename>views/clientpipes/view.html.php</filename>
+			<filename>views/clientpipes/index.html</filename>
+			<filename>views/clientpipes/tmpl/default.php</filename>
+			<filename>views/clientpipes/tmpl/index.html</filename>
+		</files>		
+	</administration>
+</install>
