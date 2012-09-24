@@ -7,7 +7,7 @@
 	vertical-align: middle;
 	width: 127px;
 	text-align: center;
-	background-image: url("/administrator/components/com_clientpipe/BlueBtn-alpha.png");
+	background-image: url("<?php echo JRoute::_('/administrator/components/com_clientpipe/BlueBtn-alpha.png');?>");
 }
 .ncMainMenu th a {
 	color: white;
