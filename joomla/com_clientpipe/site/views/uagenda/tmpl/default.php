@@ -36,11 +36,7 @@ $path = $_SERVER['PATH_TRANSLATED'];
 $currPage = $jsurl;
 $comWebPath = "components" . DS . "com_clientpipe" . DS;
 
-// <link rel="stylesheet" type="text/css" href="<?php echo $comWebPath; clientpipe.css" />
-//<script type="text/javascript" src="<?php echo $comWebPath; hintbox.js" ></script>
-
 JHTML::stylesheet('clientpipe.css', $comWebPath ); 
-JHTML::script('hintbox.js', $comWebPath );
 
 ?>
 

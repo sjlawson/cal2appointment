@@ -5,7 +5,7 @@ $jsurl=substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],'?'));
 else
 $jsurl=$_SERVER['REQUEST_URI'].'?';
 if(!strpos($jsurl,'?'))
-$jsurl .= "?";
+$jsurl .= "?option=com_clientpipe";
 ?>
 
 <div class="ncUsermenu">

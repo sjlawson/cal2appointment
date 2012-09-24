@@ -24,6 +24,7 @@ class ClientpipeController extends JController
 	 */
 	function display()
 	{
+		
 		parent::display();
 	}
 

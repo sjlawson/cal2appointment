@@ -160,8 +160,9 @@ class ClientpipeViewClientpipe extends JView
 	
 }
 
+include (JPATH_COMPONENT.DS.'views'.DS.'elements'.DS.'inc_calendar.inc.php');
 
-class inc_calendar 
+class inc_calendar_old
 {
 	
 	var $nc_options = array();
@@ -551,7 +552,7 @@ class inc_calendar
 			print '<div class="dayNum" >'.$i.'</div>';
 			
 			if($hint)
-				print "<a href='#cal' class=\"hintanchor\" onmouseover=\"showhint('$hint', this, event, '300px','$side');\">";
+				print "<a href='#cal' class=\"hintanchor\" title=\"$hint\">";
 				
 			print '<div class="calEvent"><div class="clickme">Click Row</div>';
 			print $this->getDayEvents($this->year, $this->month, $i);
@@ -589,4 +590,3 @@ class inc_calendar
 	
 }
 
-?>

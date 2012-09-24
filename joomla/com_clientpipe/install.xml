@@ -20,14 +20,13 @@
 		<filename>controller.php</filename>
 		<filename>usermenu.inc.php</filename>
 		<filename>clientpipe.php</filename>
-		<filename>hintbox.js</filename>
 		<filename>cleanValidator.js</filename>
 		<filename>clientpipe.css</filename>
 		<filename>index.html</filename>
 		<filename>models/clientpipe.php</filename>
 		<filename>models/uagenda.php</filename>
 		<filename>models/appform.php</filename>
-		
+		<filename>views/elements/inc_calendar.inc.php</filename>
 		<filename>views/clientpipe/index.html</filename>
 		<filename>views/clientpipe/view.html.php</filename>
 		<filename>views/clientpipe/tmpl/index.html</filename>
