@@ -119,7 +119,7 @@ $relativeBaseUrl = $_SERVER['REQUEST_URI'];
 //echo "$relativeBaseUrl = ".$_SERVER['REQUEST_URI'];
 ?>
 		
-	<form name='appointment' id='appointment' action='<?php echo $relativeBaseUrl ?>' method="post" >
+	<form name='appointment' id='appointment' action='<?php echo JURI::Base() . "?option=com_clientpipe"; ?>' method="post" >
 	<input type="hidden" name='ncFormtoken' value="<?php echo md5("clientpipe"); ?>" />
 	<input type="hidden" name="slot_id" value="<?php echo $slot_id ?>" />
 	<input type="hidden" name="app_date" value="<?php echo $strDate ?>" />

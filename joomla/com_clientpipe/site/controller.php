@@ -27,6 +27,10 @@ class ClientpipeController extends JController
 		
 		parent::display();
 	}
+	
+	function save() {
+		die(var_dump(JFactory::getApplication()->input));
+	}
 
 }
 ?>

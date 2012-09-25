@@ -27,7 +27,7 @@ class ClientpipeModelAppointment extends JModel
 	 * @var array
 	 */
 	var $_data;
-
+	public $isAdmin;
 
 	
 /**
@@ -82,10 +82,17 @@ class ClientpipeModelAppointment extends JModel
 		if(!isset($user))
 		$user =& JFactory::getUser();
 		
+		$this->isAdmin = (
+				in_array(8, $user->groups) || 
+				in_array(7, $user->groups) ||
+				in_array(6, $user->groups) ||
+				in_array(5, $user->groups)
+				) ? true : false;
+		
 		if(JRequest::getVar('task') != 'edit' && JRequest::getVar('task') != 'add') {
 				if (empty( $this->_data ))
 			{
-				if($user->gid > 23)
+				if($this->isAdmin)
 				$query = ' SELECT * FROM #__cp_appointment ORDER BY `appointment_id` DESC ';
 				else 
 				$query = ' SELECT a.* FROM `#__cp_appointment` a, `#__cp_staff` s 
