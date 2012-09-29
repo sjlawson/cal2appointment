@@ -27,6 +27,7 @@ Create TABLE `#__cp_slot` (
  `time_end` time NULL DEFAULT NULL,
  `default_slot` tinyint(4) NOT NULL DEFAULT '1',
  `weekdays_csv` varchar(30) NOT NULL DEFAULT 'Mon,Tue,Wed,Thu,Fri', 
+ `recurrences` int(11) NULL DEFAULT NULL, 
  `openings` int(11) NOT NULL DEFAULT '3')
  ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 

@@ -38,7 +38,7 @@ class TableException extends JTable
 	
 	var $openints = null;
 	
-	var $recurances = null;
+	var $recurrences = null;
 	
 	/**
 	 * Constructor

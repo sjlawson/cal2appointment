@@ -254,7 +254,7 @@ class inc_calendar
 			$return .= $slotReturn;
 			}
 	
-			//lastly check for an ALL_OFF exception w/o slot id (meaning everyone is off)
+			//lastly check for an ALL_OFF exception w/o slot id (meaning everyone is off) - trumps all
 			$sql = "SELECT * FROM #__cp_exception
 			WHERE `exception_date` LIKE '$year-$month-$day%' AND `all_off` = 1 AND (`slot_id` IS NULL OR `slot_id` = 0) LIMIT 1";
 			$dbo->setQuery($sql);
