@@ -19,7 +19,7 @@ jimport( 'joomla.application.component.view' );
  * @package    SteamPower.ClientPipe
  * @subpackage Components
  */
-class clientpipesViewClientpipes extends JView
+class clientpipeViewClientpipes extends JView
 {
 	/**
 	 * Clientpipe view display method

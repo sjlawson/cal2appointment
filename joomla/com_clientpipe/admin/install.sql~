@@ -66,8 +66,7 @@ CREATE TABLE `#__cp_appointment` (
        `email` VARCHAR(128) NOT NULL, 
        `phone` VARCHAR(30) NULL DEFAULT NULL,	
        `notes` MEDIUMTEXT NULL DEFAULT NULL, 
-       `req_staff_id` INT NULL DEFAULT NULL,
-	`recurring` INT NULL DEFAULT NULL) 
+       `req_staff_id` INT NULL DEFAULT NULL) 
        ENGINE = MyISAM  AUTO_INCREMENT=0 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 Create TABLE `#__cp_event` (
