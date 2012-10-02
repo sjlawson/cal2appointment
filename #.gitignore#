@@ -1,0 +1,5 @@
+.project
+.settings/*
+joomla/com_clientpipe.tar.gz
+/cakepipe/lib/Cake/Console/Templates/skel/tmp/
+/cakepipe/app/tmp
