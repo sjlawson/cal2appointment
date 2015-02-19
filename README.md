@@ -1,4 +1,4 @@
-Cal 2 Schedule
+Cal 2 Appointment
 ===============
 
 Automated appointment manager. Tutor created availability schedule, registered users may then select a slot. Appointment is created and tutor is notified.
