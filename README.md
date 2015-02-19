@@ -1,4 +1,10 @@
-clientConverter
+Cal 2 Schedule
 ===============
 
-Client Converter, automated appointment manager MVC, Joomla, Drupal project 
+Automated appointment manager. Tutor created availability schedule, registered users may then select a slot. Appointment is created and tutor is notified.
+
+ToDo: Plenty
+
+Convert from old Joomla! to stand-alone that could be dropped into any site or provided as SaaS app. 
+
+  
